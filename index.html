@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoanPredict AI | Smart Loan Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">LoanPredict <span>AI</span></div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#predict">Prediction</a></li>
+        </ul>
+
+        <a href="#predict" class="nav-btn">Get Started</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <span class="badge">AI Powered Loan Prediction</span>
+
+        <h1>Smart Loan Decisions<br>
+            Made <span>Simple & Fast</span>
+        </h1>
+
+        <p>
+            Predict your loan approval possibility using
+            Machine Learning. Enter your financial details
+            and get an instant prediction.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#predict" class="primary-btn">Predict Your Loan →</a>
+            <a href="#about" class="secondary-btn">Learn More</a>
+        </div>
+
+        <div class="stats">
+            <div>
+                <h2>AI</h2>
+                <p>Powered System</p>
+            </div>
+
+            <div>
+                <h2>ML</h2>
+                <p>Smart Prediction</p>
+            </div>
+
+            <div>
+                <h2>24/7</h2>
+                <p>Available</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="image-card">
+            <div class="card-icon">🏦</div>
+            <h3>Smart Loan Analysis</h3>
+            <p>Intelligent financial prediction</p>
+
+            <div class="progress">
+                <div></div>
+            </div>
+
+            <span>AI Analysis Ready</span>
+        </div>
+
+        <div class="floating-card">🤖 AI Powered</div>
+        <div class="floating-card second">📊 Smart Analysis</div>
+    </div>
+
+</section>
+
+<!-- About Section -->
+
+<section class="about" id="about">
+
+    <div class="section-heading">
+        <span>ABOUT PROJECT</span>
+        <h2>What is LoanPredict AI?</h2>
+        <p>
+            LoanPredict AI is a Machine Learning based system
+            designed to predict loan approval possibilities
+            using applicant financial information.
+        </p>
+    </div>
+
+    <div class="about-cards">
+
+        <div class="info-card">
+            <div class="icon">🧠</div>
+            <h3>Machine Learning</h3>
+            <p>Uses ML algorithms to analyze applicant information.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">⚡</div>
+            <h3>Fast Prediction</h3>
+            <p>Get prediction results through an easy-to-use interface.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="icon">🔒</div>
+            <h3>Data Security</h3>
+            <p>Designed with a focus on responsible data handling.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Features Section -->
+
+<section class="features" id="features">
+
+    <div class="section-heading">
+        <span>OUR FEATURES</span>
+        <h2>Why Choose LoanPredict AI?</h2>
+    </div>
+
+    <div class="feature-grid">
+        <div>📈 <h3>Smart Analysis</h3><p>Analyze financial information.</p></div>
+        <div>🎯 <h3>ML Prediction</h3><p>Machine Learning based results.</p></div>
+        <div>📊 <h3>Data Visualization</h3><p>Understand prediction statistics.</p></div>
+        <div>💻 <h3>Easy Interface</h3><p>Simple and user-friendly design.</p></div>
+    </div>
+
+</section>
+
+<!-- Prediction Form -->
+
+<section class="predict-section" id="predict">
+
+    <div class="section-heading">
+        <span>LOAN APPLICATION</span>
+        <h2>Check Your Loan Eligibility</h2>
+        <p>Enter your details below to analyze your loan application.</p>
+    </div>
+
+    <form id="loanForm">
+
+        <div class="form-grid">
+
+            <div class="input-group">
+                <label>Applicant Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Marital Status</label>
+                <select id="married" required>
+                    <option value="">Select Status</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Education</label>
+                <select id="education" required>
+                    <option value="">Select Education</option>
+                    <option>Graduate</option>
+                    <option>Not Graduate</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Employment Status</label>
+                <select id="selfEmployed" required>
+                    <option value="">Select Status</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Applicant Income (₹ / Month)</label>
+                <input type="number" id="income" min="0" placeholder="Example: 35000" required>
+            </div>
+
+            <div class="input-group">
+                <label>Co-applicant Income (₹ / Month)</label>
+                <input type="number" id="coIncome" min="0" placeholder="Example: 10000" required>
+            </div>
+
+            <div class="input-group">
+                <label>Loan Amount (₹)</label>
+                <input type="number" id="loanAmount" min="1" placeholder="Example: 500000" required>
+            </div>
+
+            <div class="input-group">
+                <label>Loan Duration (Months)</label>
+                <input type="number" id="duration" min="1" placeholder="Example: 360" required>
+            </div>
+
+            <div class="input-group">
+                <label>Credit History</label>
+                <select id="credit" required>
+                    <option value="">Select Credit History</option>
+                    <option value="1">Good (1)</option>
+                    <option value="0">Poor (0)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Property Area</label>
+                <select id="property" required>
+                    <option value="">Select Area</option>
+                    <option>Urban</option>
+                    <option>Semiurban</option>
+                    <option>Rural</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button type="submit" class="submit-btn">
+            Predict Loan Approval →
+        </button>
+
+        <div id="result" class="result"></div>
+
+        <p class="disclaimer">
+            Note: This is an educational prediction system.
+            Actual loan approval depends on the bank's assessment.
+        </p>
+
+    </form>
+
+</section>
+
+<footer>
+    <h2>LoanPredict <span>AI</span></h2>
+    <p>Machine Learning Based Loan Approval Prediction System</p>
+    <p>© 2026 LoanPredict AI | Minor Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```

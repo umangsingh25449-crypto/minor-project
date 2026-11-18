@@ -1,0 +1,8 @@
+{
+  "name": "loanpredict-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Educational loan prediction demo backend",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
